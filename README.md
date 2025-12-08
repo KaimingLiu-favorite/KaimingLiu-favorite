@@ -8,7 +8,7 @@ A personal space where I cultivate insights from my pharmacy journey and share t
 
 Welcome to my digital garden! This repository hosts the static personal website of **Kaiming Liu**, a pharmacy student passionate about both scientific exploration and living a fulfilling life.
 
-This website is designed to be a gentle and approachable reflection of my world. Here, you'll find a blend of my academic pursuits in pharmacy (research interests, learning reflections) and personal passions (fitness, reading, and life's simple pleasures). The design philosophy is inspired by **Apple, Notion, and modern minimalist UI trends**, aiming for a clean, elegant, and serene visual experience that prioritizes readability and ease of use. I strive to share my journey in an accessible way, avoiding overly technical jargon where possible, to foster connection and shared understanding.
+This website is designed to be a gentle and approachable reflection of my world. Here, you'll find a blend of my academic pursuits in pharmacy (research interests, learning reflections) and personal passions (fitness, reading, and life's simple pleasures). I strive to share my journey in an accessible way, avoiding overly technical jargon where possible, to foster connection and shared understanding.
 
 
 
