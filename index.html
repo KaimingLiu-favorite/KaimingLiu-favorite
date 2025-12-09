@@ -3,151 +3,246 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaiming Liu - 药学生活探索者</title>
-    <!-- Google Fonts for a modern, clean look -->
-    <!-- Inter (英文主打，现代感强), Noto Sans SC (中文友好，同样简洁) -->
+    <title>Science & Life | Kaiming Liu's personal website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- 链接到你的CSS文件 -->
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
+    <!-- 导航栏 -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">Science<span>·</span>Life</a>
             <nav>
-                <a href="#hero" class="site-title">Kaiming Liu</a>
                 <ul>
-                    <li><a href="#about">关于我</a></li>
-                    <li><a href="#research">科研漫谈</a></li>
-                    <li><a href="#life">生活点滴</a></li>
-                    <li><a href="#contact">与我连接</a></li>
+                    <li><a href="#about">个人简介</a></li>
+                    <li><a href="#research">研究方向</a></li>
+                    <li><a href="#hobbies">个人爱好</a></li>
+                    <li><a href="#life">生活分享</a></li>
+                    <li><a href="#contact">联系方式</a></li>
                 </ul>
             </nav>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
-    <main>
-        <!-- 欢迎区：头像和简单介绍 -->
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <div class="hero-content">
-                    <!-- 请替换为你的头像图片路径 -->
-                    <img src="images/life_photo.jpg" alt="你的头像" class="avatar">
-                    <h1>你好，我是 Kaiming Liu</h1>
-                    <p class="tagline">一位在药学领域探索，也热爱生活的学生。</p>
-                    <p>我在这里分享我的学习感悟、科研探索，以及生活中那些让心境变得松弛的小确幸。欢迎来到我的数字角落，希望我们能有所共鸣。</p>
-                    <div class="hero-actions">
-                        <a href="#research" class="button primary">探索我的科研</a>
-                        <a href="#life" class="button secondary">看看我的生活</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- 移动端菜单 -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#about">个人简介</a></li>
+            <li><a href="#research">研究方向</a></li>
+            <li><a href="#hobbies">个人爱好</a></li>
+            <li><a href="#life">生活分享</a></li>
+            <li><a href="#contact">联系方式</a></li>
+        </ul>
+    </div>
 
-        <!-- 关于我：兴趣概述 -->
-        <section id="about" class="about-section section-padding">
-            <div class="container">
-                <h2>关于我与我的世界</h2>
-                <div class="about-grid">
-                    <div class="about-item">
-                        <h3>🔬 科研旅程</h3>
-                        <p>我是一名药学生，在实验室里探寻微观世界的奥秘，期待通过学习和研究，为人类健康贡献一份力量。这里记录了我的思考与进展。</p>
-                        <a href="#" class="read-more">了解更多科研项目 →</a>
-                    </div>
-                    <div class="about-item">
-                        <h3>🏋️‍♀️ 健康生活</h3>
-                        <p>除了学术，我也相信健康的体魄是美好生活的基础。健身是我放松身心的方式，它们让我保持活力与专注。</p>
-                        <a href="#" class="read-more">我的健身日常 →</a>
-                    </div>
-                    <div class="about-item">
-                        <h3>📚 阅读时光</h3>
-                        <p>文字是我获取新知、沉淀思绪的途径。从专业书籍到文学经典，阅读拓宽了我的视野，也滋养了我的内心。</p>
-                        <a href="#" class="read-more">我的书单分享 →</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 科研预览区 -->
-        <section id="research" class="research-preview section-padding bg-light">
-            <div class="container">
-                <h2>科研漫谈：我的探索之路</h2>
-                <p class="section-intro-text">这里将展示我的一些研究方向、项目进展或学习心得。不强调复杂的专业术语，更注重分享探索过程中的思考与感悟。</p>
-                <div class="grid-3-col">
-                    <div class="card">
-                        <h3>药物合成新思路</h3>
-                        <p>关于某个小分子药物合成路径的初步探索与心得体会，分享了从文献调研到实验设计的心路历程。</p>
-                        <a href="#" class="card-link">查看详情 →</a>
-                    </div>
-                    <div class="card">
-                        <h3>药理机制解析</h3>
-                        <p>对特定疾病模型中药物作用机制的思考，结合了最新研究进展，用通俗的语言解释了复杂概念。</p>
-                        <a href="#" class="card-link">阅读文章 →</a>
-                    </div>
-                    <div class="card">
-                        <h3>未来药物展望</h3>
-                        <p>我对AI在药物研发中应用的初步构想，以及作为药学生对交叉学科学习的规划。</p>
-                        <a href="#" class="card-link">了解更多 →</a>
-                    </div>
-                </div>
-                <div class="center-text mt-4">
-                    <a href="#" class="button primary">查看所有科研内容</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 生活分享预览区 -->
-        <section id="life" class="life-preview section-padding">
-            <div class="container">
-                <h2>生活点滴：慢下来，去感受</h2>
-                <p class="section-intro-text">记录那些让生活充满色彩的瞬间：可能是周末的户外徒步，手冲咖啡的仪式感，或者一次有趣的阅读体验。希望这些能为你带来一些放松与启发。</p>
-                <div class="grid-3-col">
-                    <div class="card">
-                        <h3>城市绿洲的徒步日</h3>
-                        <p>分享周末在城市公园的一次轻松徒步，配上几张捕捉到的自然美景照片，感受片刻的宁静。</p>
-                        <a href="#" class="card-link">阅读故事 →</a>
-                    </div>
-                    <div class="card">
-                        <h3>我的秋日阅读清单</h3>
-                        <p>推荐几本近期读过的好书，涵盖文学、哲学或科普，并分享它们带给我的思考。</p>
-                        <a href="#" class="card-link">查看推荐 →</a>
-                    </div>
-                    <div class="card">
-                        <h3>手冲咖啡：我的解压仪式</h3>
-                        <p>从咖啡豆的选择到冲泡技巧，记录了手冲咖啡如何成为我日常中一份“松弛感”的来源。</p>
-                        <a href="#" class="card-link">了解更多 →</a>
-                    </div>
-                </div>
-                <div class="center-text mt-4">
-                    <a href="#" class="button secondary">阅读更多生活分享</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 联系方式 -->
-        <section id="contact" class="contact-section section-padding bg-light">
-            <div class="container">
-                <h2>与我连接</h2>
-                <p class="section-intro-text">如果你对我的科研感兴趣，或者想一起聊聊生活中的美好，欢迎随时通过以下方式联系我。</p>
-                <div class="social-links">
-                    <!-- 请替换为你的实际邮箱 -->
-                    <a href="mailto:2020221337@stu.cpu.edu.cn" class="social-icon">✉️ 邮箱</a>
-                    <!-- 可选：添加GitHub, LinkedIn或其他社交媒体链接 -->
-                    <a href="19850828835" target="_blank" class="social-icon"> 电话</a>
-                    <!-- <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-icon">💼 LinkedIn</a> -->
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
+    <!-- 英雄区域/个人简介 -->
+    <section class="hero" id="about">
         <div class="container">
-            <p>&copy; 2025 Kaiming Liu. All rights reserved. ☕️</p>
+            <div class="fade-in">
+                <!-- 替换为您的图片 -->
+                <!-- 方法1：使用相对路径（推荐） -->
+                <img src="images/profile.jpg" alt="我的照片" class="profile-img" onerror="this.onerror=null; this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
+            
+                <h1>Pharmacy student · Explorer for science</h1>
+                <h2>感兴趣于肿瘤组织糖基化研究 · 基因调控 · 核酸药物递送</h2>
+                <p>大四就读于中国药科大学，在此记录我的一些日常</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span id="email">2020221337@stu.cpu.edu.cn</span>
+                        <button class="copy-btn" data-text="2020221337@stu.cpu.edu.cn">
+                            <i class="fas fa-copy"></i>
+                        </button>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>19850828835</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>江苏 · 南京</span>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-researchgate"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 研究方向 -->
+    <section id="research">
+        <div class="container">
+            <h2 class="section-title">Research Interests</h2>
+            <div class="research-grid">
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-dna research-icon"></i>
+                    </div>
+                    <h3>Glycosylation in Tumor Tissues</h3>
+                    <p>Investigating the role of aberrant glycosylation(Especially O-GalNAc and O-GlcNAc) in tumor progression and metastasis, with a focus on developing glycobiology-based diagnostic and therapeutic strategies.</p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-microscope research-icon"></i>
+                    </div>
+                    <h3>Gene Regulation</h3>
+                    <p>Exploring epigenetic modifications and transcriptional regulation mechanisms in cancer cells, aiming to identify novel targets for precision medicine.</p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-prescription-bottle-alt research-icon"></i>
+                    </div>
+                    <h3>Nucleic Acid Drug Delivery</h3>
+                    <p>Designing and optimizing nanocarriers for efficient delivery of siRNA, mRNA, and CRISPR-Cas9 systems to target cells for therapeutic applications.</p>
+                </div>
+            </div>
+            
+            <div class="research-grid">
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-vial research-icon"></i>
+                    </div>
+                    <h3>Cancer Immunology</h3>
+                    <p>Studying the interaction between tumor cells and the immune system to develop innovative immunotherapies for hard-to-treat cancers.</p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-chart-line research-icon"></i>
+                    </div>
+                    <h3>Biomarker Discovery</h3>
+                    <p>Utilizing multi-omics approaches to identify novel biomarkers for early cancer detection and treatment response prediction.</p>
+                </div>
+                
+                <div class="research-card fade-in">
+                    <div class="science-icon">
+                        <i class="fas fa-tablets research-icon"></i>
+                    </div>
+                    <h3>Precision Medicine</h3>
+                    <p>Developing personalized therapeutic approaches based on individual genetic and molecular profiles for improved treatment outcomes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 个人爱好 -->
+    <section id="hobbies" class="section-alt">
+        <div class="container">
+            <h2 class="section-title">Personal Interests</h2>
+            <div class="hobby-container">
+                <div class="hobby-item fade-in">
+                    <div class="hobby-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>健身</h3>
+                    <p>健身改变了我很多，但最近有点忙去得少了，希望以后还是重拾旧好&#128512</p>
+                </div>
+                
+                <div class="hobby-item fade-in">
+                    <div class="hobby-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3>阅读</h3>
+                    <p>因为《明朝那些事》拾起了对明朝历史的热爱，但最近想读一些小说类的，四楼阅览室我的天堂&#128525</p>
+                </div>
+                
+                <div class="hobby-item fade-in">
+                    <div class="hobby-icon">
+                        <i class="fas fa-hiking"></i>
+                    </div>
+                    <h3>闲庭漫步</h3>
+                    <p>比较喜欢在工位楼下面走一走，看看校园内的小动物，感觉挺有生活的哈哈</p>
+                </div>
+    </section>
+
+    <!-- 生活分享 -->
+    <section id="life">
+        <div class="container">
+            <h2 class="section-title">Life & Experiences</h2>
+            <div class="life-grid">
+                <div class="life-card fade-in">
+                    <!-- 相对路径示例 -->
+                    <img src="images/lab.jpg" alt="实验室日常" class="life-image">
+                    
+                    <div class="life-content">
+                        <div class="life-date">2024.03.15</div>
+                        <h3>实验室日常</h3>
+                        <p>这张图其实是摆拍哈哈哈，曾参与一项省级大创，做saRNA相关研究的，也是这段科研让我想做药剂相关的研究，基因调控真的很酷&#128513！</p>
+                    </div>
+                </div>
+                
+                <div class="life-card fade-in">
+                    <img src="images/conference.jpg" alt="学术会议" class="life-image">
+                    <div class="life-content">
+                        <div class="life-date">2024.12.21</div>
+                        <h3>智能药学前沿</h3>
+                        <p>在玄武校区参加了比较大型的学术会议，前一天晚上才收到通知第二天一大早就赶去了，近距离接触了科研偶像，确实了解了不少，不过印象最深刻的还是茶歇&#128514&#128514&#128514</p>
+                    </div>
+                </div>
+                
+                <div class="life-card fade-in">
+                    <img src="images/fitness.jpg" alt="健身瞬间" class="life-image">
+                    <div class="life-content">
+                        <div class="life-date">2024.01.10</div>
+                        <h3>健身房日常</h3>
+                        <p>这好像是期末周复习的我精神上好痛苦所以去健身房让身体也痛苦一下&#128521真的好爽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚/联系方式 -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>联系我</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i>2020221337@stu.cpu.edu.cn</li>
+                        <li><i class="fas fa-phone"></i> 19850828835</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 江苏省南京市江宁区</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>科研链接</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://www.webofscience.com"><i class="fas fa-atom"></i>Web of Science</a></li>
+                        <li><a href="https://scholar.google.com/"><i class="fab fa-google-scholar"></i> Google Scholar</a></li>
+                        <li><a href="https://pubmed.ncbi.nlm.nih.gov/"><i class="fas fa-book-medical"></i> PubMed</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>关注我</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://github.com/KaimingLiu-favorite"><i class="fab fa-github"></i> GitHub</a></li>
+                        <li><a href="https://www.douyin.com/user/self"><i class="fab fa-tiktok"></i> 抖音</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Science & Life | Kaiming Liu's personal website | 所有内容均为个人分享</p>
+                <p>最后更新: 2025年12月</p>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
-
